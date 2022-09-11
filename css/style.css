@@ -29,6 +29,24 @@ li {
 h1, h2, h3, h4 {
     font-weight: bold;
 }
+input {
+    padding-left: 10px;
+    border-radius: 5px;
+}
+option {
+    font-weight: normal;
+    display: block;
+    white-space: nowrap;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+}
+select {
+    background-color: #fff;
+    height: 40px;
+    width: 200px;
+    border: 1px solid #efefef;
+    appearance: normal;
+}
 
 /* header */
 .dashboard-header {
@@ -679,6 +697,123 @@ body.instagram .search_setting_value {
     border-radius: 5px;
 }
 
+/* account_edit */
+#account_edit article form {
+    width: 100%;
+    box-sizing: border-box;
+}
+#account_edit article h1, 
+#account_user_edit .main_container h1 {
+    background-color: #8284bd;
+    margin: 0;
+    padding: 20px;
+    color: #fff;
+    font-weight: 400;
+    border-radius: 10px 10px 0 0;
+}
+#account_edit article .form_area {
+    background-color: #fff;
+    padding: 10px 30px;
+}
+#account_edit article .invoice_block {
+    margin-top: 30px;
+}
+#account_edit article .input_block .input_title {
+    color: #a1a4a5;
+    font-size: 16px;
+    letter-spacing: 3px;
+    margin-bottom: 10px;
+    margin-top: 30px;
+    font-weight: 600;
+}
+#account_edit article .input_block .type_text input {
+    border: 1px solid #a1a4a5;
+    width: 500px;
+    height: 50px;
+}
+#account_edit article .input_block .type_text input.w-100px {
+    width: 100px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#account_edit article .input_block .type_text input.w-150px {
+    width: 150px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+#account_edit article .input_block .type_text.short_block input:first-child, .search_header ul li:first-child {
+    margin-left: 0;
+}
+#account_edit article .input_block span {
+    color: #ff1493;
+    font-weight: 700;
+}
+#account_edit article .input_block .type_text select {
+    width: 400px;
+    height: 50px;
+}
+#account_edit article select {
+    border-color: #a1a4a5;
+    border-radius: 5px;
+}
+#account_edit article .invoice_check_flag {
+    margin-top: 40px;
+}
+#account_edit article .checkbox_origin input[type=checkbox] {
+    display: none;
+}
+#account_edit .cart_view {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+#account_edit article .checkbox_origin label {
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    padding: 0 30px;
+    line-height: 60px;
+    border-radius: 5px;
+    color: #8284bd;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #efefef;
+    border: 1px solid #efefef;
+}
+#account_edit .card_setting .payjs-outer {
+    border: 1px solid #a1a4a5;
+    border-radius: 5px;
+    width: 500px;
+    height: 50px;
+    box-sizing: border-box;
+    padding: 15px 10px;
+    position: relative;
+}
+#account_edit article .btn_block {
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+#account_edit article .btn_block button {
+    height: 60px;
+    width: 300px;
+    font-size: 16px;
+    letter-spacing: 2px;
+    cursor: pointer;
+}
+.button_b_blue, .button_b_green {
+    background-color: #fff;
+    font-weight: 700;
+    border-radius: 10px;
+    padding: 12px 30px;
+    line-height: 10px;
+    box-sizing: border-box;
+    border: 2px solid #8284bd;
+    color: #8284bd;
+}
+.button_b_green:hover, .get_csv_download a:hover {
+    background-color: #8284bd;
+    color: #fff;
+}
 
 /* contact */
 form {

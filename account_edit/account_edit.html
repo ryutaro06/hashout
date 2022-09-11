@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HASHOUT-account_edit</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/ress.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hover.css">
+</head>
+<body id="account_edit">
+    <header class="dashboard-header">
+        <div class="header_inner">
+            <h1><a href="../dashboard.html">HASHOUT</a></h1>
+            <nav>
+                <ul class="dropdwn">
+                    <li>
+                        <a href="../account_list/account_list.html">アカウント調査<span>></span></a>
+    
+                        <ul class="dropdwn_menu">
+                            <li><a href="../account_create/account_create.html">新規登録</a></li>
+                            <li><a href="../account_list/account_list.html">調査一覧</a></li>
+                            <li><a href="#">複合投稿一覧</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../hashtag_list/hashtag_list.html">ハッシュタグ調査<span>></span></a>
+                        <ul class="dropdwn_menu">
+                            <li><a href="../hashtag_create/hashtag_create.html">新規登録</a></li>
+                            <li><a href="../hashtag_list/hashtag_list.html">調査一覧</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../account_edit/account_edit.html">企業情報・請求情報</a>
+                        <p>xxxxxxxxxxxxx</p>
+                    <li>
+                        <a href="#">管理者登録・編集</a>
+                    </li>
+                    <li>
+                        <a href="#">契約プラン確認</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="sub_sidemenu">
+                <ul>
+                    <li><a href="#" target="_blank">お問い合わせ</a></li>
+                    <li><a href="#">ログアウト</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main_container">
+            <article>
+                <form action="/dashboard/account_edit" method="post" id="account_edit_form">
+                    <!-- 
+                    <input type="hidden" name="role" value="dashboard">
+                    <input type="hidden" name="action" value="account_edit">
+                    <input type="hidden" name="render_type" value="">
+                    <input type="hidden" name="user_name_1" value="">
+                    <input type="hidden" name="user_name_2" value="">
+                    <input type="hidden" name="user_name_kana_1" value="">
+                    <input type="hidden" name="user_name_kana_2" value="">
+                    <input type="hidden" name="email" value="admin@kazeniwa.net">
+                    <input type="hidden" name="card_info" value="Visa-2248-11/2025">
+                     -->
+                    <h1>企業情報</h1>
+                    <div class="form_area">
+                        <div class="input_block">
+                            <div class="input_title">企業名</div>
+                            <div class="type_text">
+                                <input type="text" name="company_name" placeholder="株式会社HASHOUT">
+                            </div>
+                        </div>
+                        <div class="input_block">
+                            <div class="input_title">企業名カナ</div>
+                            <div class="type_text">
+                                <input type="text" name="company_name_kana" placeholder="カブシキガイシャHASHOUT">
+                            </div>
+                        </div>
+                        <div class="input_block">
+                            <div class="input_title">電話番号</div>
+                            <div class="type_text short_block">
+                                <input class="w-100px" type="text" name="tel_1" placeholder="090" > -
+                                <input class="w-150px" type="text" name="tel_2" placeholder="1234" > -
+                                <input class="w-150px" type="text" name="tel_3" placeholder="5678" >
+                            </div>
+                        </div>
+                        <div class="input_block">
+                            <div class="input_title">郵便番号</div>
+                            <div class="type_text short_block">
+                                <input class="w-100px" type="text" name="zipcode_1" placeholder="123"> -
+                                <input class="w-100px" type="text" name="zipcode_2" placeholder="4567">
+                            </div>
+                        </div>
+                        <div class="input_block">
+                            <div class="input_title">住所</div>
+                            <div class="type_text">
+                                <input class="w-500px" type="text" name="address_1" placeholder="東京都大田区蒲田5−5−5">
+                            </div>
+                        </div>
+                        <div class="input_block" id="new_report">
+                            <div class="input_title">住所2</div>
+                            <div class="type_text address_block">
+                                <input class="w-500px" type="text" name="address_2" placeholder="池袋パークハイツ2F">
+                            </div>
+                        </div>
+                        <div class="input_block">
+                            <div class="input_title">企業URL</div>
+                            <div class="type_text">
+                                <input class="w-500" type="text" name="url" placeholder="https://kazeniwa.net/">
+                            </div>
+                        </div>
+                        <div class="input_block">
+                            <div class="input_title">レポート設定<span>「NEW」</span></div>
+                            <div class="type_text">
+                                <select name="report_price_setting">
+                                    <option value="1" selected>広告換算額・予測インプレッション数を表示する</option>
+                                    <option value="2" >広告換算額・予測インプレッション数を表示しない</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="invoice_check_flag checkbox_origin">
+                        <input type="checkbox" name="invoice_check_flag" value="1" id="invoice_check_flag">
+                        <label for="invoice_check_flag">請求情報へ企業情報内容をコピー</label>
+                    </div>
+                    <div class="invoice_block">
+                        <h1>請求情報</h1>
+                        <div class="form_area">
+                            <div class="input_block">
+                                <div class="input_title">支払い方法</div>
+                                <div class="type_text">
+                                    <select name="payment_mode">
+                                        <option value="1" >銀行振込（後払い）</option>
+                                        <option value="2" selected>クレジットカード（先払い）</option>
+                                    </select>
+                                </div>
+                                <div class="card_container">
+                                    <div class="cart_view">
+                                        現在設定されているクレジットカードは以下の通りです。<br>
+                                        変更する場合は、カード情報を入力してください。
+                                        <div class="now_card_view">
+                                            <span>Visa</span>
+                                            <span>xxxx-xxxx-xxxx-2248</span>
+                                            <span>11/2025</span>
+                                        </div>
+                                    </div>
+                                    <div class="card_setting">
+                                        <div id="card_input" class="payjs-outer">
+                                            <!-- ここにフォームが生成されます -->
+                                            カード情報を記入
+                                        </div>
+                                        <input type="hidden" name="create_token" value="" id="token">
+                                        <div class="card_error_text"></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input_block">
+                                <div class="input_title">企業名</div>
+                                <div class="type_text">
+                                    <input type="text" name="invoice_company_name" placeholder="株式会社HASHOUT" >
+                                </div>
+                            </div>
+                            <div class="input_block">
+                                <div class="input_title">企業名カナ</div>
+                                <div class="type_text">
+                                    <input type="text" name="invoice_company_name_kana" placeholder="カブシキガイシャHASHOUT">
+                                </div>
+                            </div>
+                            <div class="input_block">
+                                <div class="input_title">電話番号</div>
+                                <div class="type_text short_block">
+                                    <input class="w-100px" type="text" name="invoice_tel_1" placeholder="08">
+                                    -
+                                    <input class="w-150px" type="text" name="invoice_tel_2" placeholder="1234">
+                                    -
+                                    <input class="w-150px" type="text" name="invoice_tel_3" placeholder="0300">
+                                </div>
+                            </div>
+                            <div class="input_block">
+                                <div class="input_title">郵便番号</div>
+                                <div class="type_text short_block">
+                                    <input class="w-100px" type="text" name="invoice_zipcode_1"
+                                        placeholder="123"> -
+                                    <input class="w-100px" type="text" name="invoice_zipcode_2"
+                                        placeholder="4567">
+                                </div>
+                            </div>
+                            <div class="input_block">
+                                <div class="input_title">住所</div>
+                                <div class="type_text">
+                                    <input class="w-500" type="text" name="invoice_address_1"
+                                        placeholder="東京都港区西新橋3−24−5">
+                                </div>
+                            </div>
+                            <div class="input_block">
+                                <div class="input_title">住所2</div>
+                                <div class="type_text">
+                                    <input class="w-500" type="text" name="invoice_address_2"
+                                        placeholder="御成門ビル６F">
+                                </div>
+                            </div>
+                            <div class="input_block">
+                                <div class="input_title">担当者名</div>
+                                <div class="type_text name_block">
+                                    <div class="input_group">
+                                        <div class="input_sub_title">姓</div>
+                                        <input type="text" name="invoice_user_name_1" placeholder="鈴木">
+                                    </div>
+                                    <div class="input_group">
+                                        <div class="input_sub_title">名</div>
+                                        <input type="text" name="invoice_user_name_2" value="一郎">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input_block">
+                                <div class="input_title">担当者名カナ</div>
+                                <div class="type_text name_block">
+                                    <div class="input_group">
+                                        <div class="input_sub_title">セイ</div>
+                                        <input type="text" name="invoice_user_name_kana_1"
+                                            placeholder="スズキ">
+                                    </div>
+                                    <div class="input_group">
+                                    <div class="input_sub_title">メイ</div>
+                                        <input type="text" name="invoice_user_name_kana_2"
+                                            placeholder="イチロー">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="input_block">
+                                <div class="input_title">担当者メールアドレス</div>
+                                <div class="type_text">
+                                    <input type="text" name="invoice_email" placeholder="admin@kazeniwa.net">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="btn_block">
+                            <button type="submit" name="submit" value="1" class="button_b_green">保存</button>
+                        </div>
+                    </div>
+                </form>
+            </article>
+        </div>
+    </main>
+</body>
+</html>
