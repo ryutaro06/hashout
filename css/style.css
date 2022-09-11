@@ -36,7 +36,7 @@ h1, h2, h3, h4 {
     top: 0;
     left: 0;
     width: 178px;
-    z-index: 10;
+    z-index: 9999;
 }
 header .header_inner {
     width: 100%;
@@ -178,6 +178,9 @@ main .new_setting_area .new_setting a {
 }
 .twitter_color {
     background-color: #00aced;
+}
+.instagram_color {
+    background-color: #ca2978;
 }
 .list_unit_container .list_item_block .sub_contents .value {
     color: #939393;
@@ -386,7 +389,7 @@ main .new_setting_area .new_setting a {
     position: absolute;
     bottom: 5px;
     right: 0;
-    z-index: 999;
+    z-index: 9;
 }
 .search_header .right_menu a {
     display: block;
@@ -468,6 +471,12 @@ body.twitter .search_value_container {
 .analyze_detail h2 {
     font-size: 16px;
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.analyze_detail h2 a {
+    font-size: 14px;
+    line-height: 20px;
 }
 .analyze_detail .total_result {
     margin-bottom: 20px;
@@ -562,6 +571,114 @@ body.twitter .search_value_container {
     font-size: 14px;
     line-height: 20px;
 }
+
+/* hashtag_create */
+#hashtag_create .search_word_container .search_word_inner {
+    margin-bottom: 20px;
+    margin-right: 38px;
+}
+.search_word_inner span {
+    display: inline-block;
+    width: 60px;
+    font-size: 16px;
+    line-height: 60px;
+    text-align: center;
+    background-color: #8284bd;
+    color: #fff;
+    border-radius: 5px 0 0 5px/5px 0 0 5px;
+}
+#hashtag_create .search_word_container .search_word_inner input {
+    width: 300px;
+    height: 60px;
+    border-radius: 0 5px 5px 0/0 5px 5px 0;
+    border: 1px solid #efefef;
+    border-left: none;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #fff;
+    cursor: text;
+}
+main .dash_btn {
+    background-color: #6c70d6;
+    padding: 19px 30px;
+    border-radius: 5px;
+    box-sizing: border-box;
+    color: #fff;
+}
+main .dash_btn:hover {
+    background-color: #9296f5;
+    cursor: pointer;
+}
+#hashtag_create .hashtag_create_btn_area {
+    margin-top: 30px;
+}
+#hashtag_create .hashtag_create_btn_area button {
+    transition: .5s;
+}
+#hashtag_create .hashtag_create_btn_area button:hover {
+    background-color: #a4a6de;
+    cursor: pointer;
+}
+#hashtag_create form button {
+    box-sizing: border-box;
+    padding: 3px 8px;
+    border-radius: 4px;
+    background-color: #8284bd;
+    color: #fff;
+    display: block;
+    border: none;
+    font-size: 16px;
+    letter-spacing: 1px;
+    width: 300px;
+    line-height: 50px;
+    margin: 0 auto;
+}
+#hashtag_create .past_hashtag_container h3 {
+    font-size: 16px;
+    font-weight: 400;
+    border-bottom: 1px solid #d6d6d6;
+    margin-top: 50px;
+    padding: 10px 0;
+}
+#hashtag_create .past_hashtag_container p {
+    font-size: 12px;
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+#hashtag_create .past_hashtag_container div {
+    margin-top: 50px;
+    background-color: pink;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    line-height: 300px;
+}
+
+/* hashtag_analyze */
+body.instagram .search_value_container {
+    background-color: #ec529d;
+    border-radius: 0 0 5px 5px;
+}
+body.instagram .search_setting_value {
+    display: flex;
+}
+.search_container .search_value_container .search_value_container_inner {
+    color: #fff;
+    width: 870px;
+    margin: 0 auto;
+    padding: 8px 15px;
+    box-sizing: border-box;
+}
+.instagram_comment {
+    width: 100%;
+    line-height: 60px;
+    text-align: center;
+    border: 1px solid #ccc;
+    font-size: 14px;
+    margin-bottom: 30px;
+    border-radius: 5px;
+}
+
 
 /* contact */
 form {
