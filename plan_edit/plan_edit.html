@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HASHOUT-account</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="../css/ress.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/hover.css">
+
+</head>
+<body id="plan_edit">
+    <header class="dashboard-header">
+        <div class="header_inner">
+            <h1><a href="../dashboard.html">HASHOUT</a></h1>
+            <nav>
+                <ul class="dropdwn">
+                    <li>
+                        <a href="../account_list/account_list.html">アカウント調査<span>></span></a>
+    
+                        <ul class="dropdwn_menu">
+                            <li><a href="../account_create/account_create.html">新規登録</a></li>
+                            <li><a href="../account_list/account_list.html">調査一覧</a></li>
+                            <li><a href="#">複合投稿一覧</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../hashtag_list/hashtag_list.html">ハッシュタグ調査<span>></span></a>
+                        <ul class="dropdwn_menu">
+                            <li><a href="../hashtag_create/hashtag_create.html">新規登録</a></li>
+                            <li><a href="../hashtag_list/hashtag_list.html">調査一覧</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="../account_edit/account_edit.html">企業情報・請求情報</a>
+                        <p>xxxxxxxxxxxxx</p>
+                    <li>
+                        <a href="../account_user/account_user.html">管理者登録・編集</a>
+                    </li>
+                    <li>
+                        <a href="../plan_edit/plan_edit.html">契約プラン確認</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="sub_sidemenu">
+                <ul>
+                    <li><a href="#" target="_blank">お問い合わせ</a></li>
+                    <li><a href="#">ログアウト</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div class="main_container">
+            <h1>プランの変更</h1>
+            <article>
+                <div class="plan_date_block">
+                    <div class="plan_date_block_left">
+                        <h3>現在契約中のプラン：</h3>
+                        <div class="plan_update_date">
+                            スタートプラン
+                        </div>
+                    </div>
+                    <div class="plan_date_block_right">
+                        <h3>次回更新日：</h3>
+                        <div class="plan_update_date">
+                            2022/10/06
+                        </div>
+                    </div>
+                </div>
+                <table class="plan_list">
+                    <tr>
+                        <th class="column_name">プラン</th>
+                        <th class="column_price">月額料金</th>
+                        <th class="column_tag">ハッシュタグ</th>
+                        <th class="column_account">アカウント</th>
+                        <th class="column_account">過去調査</th>
+                        <th class="column_account">投稿保存件数</th>
+                        <th class="column_account">1日取得上限</th>
+                        <th class="column_edit">契約</th>
+                    </tr>
+                    <tr  data-id="">
+                        <td class="plan_name">プレミアムプラン</td>
+                        <td>25万円</td>
+                        <td>50個</td>
+                        <td>30個</td>
+                        <td>5000件</td>
+                        <td>
+                            H:500000投稿<br>
+                            A:100000投稿
+                        </td>
+                        <td>50000件</td>
+                        <td class="edit_block">
+                            <a href="#" class="dash_btn plan_upgrade" data-id="47" data-plan_name="プレミアムプラン">プラン変更</a>
+                        </td>
+                    </tr>
+                    <tr  data-id="">
+                        <td class="plan_name">ミドルプラン</td>
+                        <td>8万円</td>
+                        <td>30個</td>
+                        <td>10個</td>
+                        <td>3000件</td>
+                        <td>
+                            H:400000投稿<br>
+                            A:50000投稿
+                        </td>
+                        <td>20000件</td>
+                        <td class="edit_block">
+                            <a href="#" class="dash_btn plan_upgrade" data-id="46" data-plan_name="ミドルプラン">プラン変更</a>
+                        </td>
+                    </tr>
+                    <tr  data-id="">
+                        <td class="plan_name">ライトプラン</td>
+                        <td>5万円</td>
+                        <td>10個</td>
+                        <td>5個</td>
+                        <td>1500件</td>
+                        <td>
+                            H:200000投稿<br>
+                            A:30000投稿
+                        </td>
+                        <td>10000件</td>
+                        <td class="edit_block">
+                            <a href="#" class="dash_btn plan_upgrade" data-id="44" data-plan_name="ライトプラン">プラン変更</a>
+                        </td>
+                    </tr>
+                    <tr  data-id="">
+                        <td class="plan_name">パストプラン</td>
+                        <td>7万円</td>
+                        <td>10個</td>
+                        <td>5個</td>
+                        <td>5000件</td>
+                        <td>
+                            H:200000投稿<br>
+                            A:30000投稿
+                        </td>
+                        <td>10000件</td>
+                        <td class="edit_block">
+                            <a href="#" class="dash_btn plan_upgrade" data-id="45" data-plan_name="パストプラン">プラン変更</a>
+                        </td>
+                    </tr>
+                    <tr class="plan_unit" data-id="">
+                        <td class="plan_name">スタートプラン</td>
+                        <td>3万円</td>
+                        <td>3個</td>
+                        <td>1個</td>
+                        <td>100件</td>
+                        <td>
+                            H:100000投稿<br>
+                            A:10000投稿
+                        </td>
+                        <td>5000件</td>
+                        <td class="edit_block">契約中</td>
+                    </tr>
+                </table>
+                <div class="plan_detail_link">
+                    ＊H：ハッシュタグ分析、A：アカウント調査<br>
+                    <a href="#" target="_blank">プランの詳細はこちら</a>
+                </div>
+                <h4>自動更新について</h4>
+                <div class="account_end_container">
+                    <div class="account_end_comment">
+                        契約更新しなかった場合集計結果などのデータは削除される為、閲覧ができなくなります。<br>
+                        契約を解除される場合は以下の「自動更新停止」ボタンをクリックして、自動更新停止手続きをおこなってください。
+                    </div>
+                    <a href="#" class="plan_out account_end_btn">自動更新停止</a>
+                </div>
+            </article>
+        </div>
+    </main>
+</body>
+</html>

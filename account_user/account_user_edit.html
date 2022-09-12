@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="../css/hover.css">
 
 </head>
-<body id="hashtag_list">
+<body id="account_user_edit">
     <header class="dashboard-header">
         <div class="header_inner">
             <h1><a href="../dashboard.html">HASHOUT</a></h1>
@@ -56,39 +56,53 @@
     </header>
     <main>
         <div class="main_container">
-            <h1>ハッシュタグ一覧</h1>
-            <div class="new_setting_area">
-                現在のハッシュタグ調査ご利用状況  1件/ 3件
-                <p>残り2件登録可能</p>
-                <div class="new_setting">
-                    <a href="../hashtag_create/hashtag_create.html">調査を追加する</a>
-                </div>
-            </div>
-            <article id="hashtag_list_container">
-                <div class="list_unit_container hvr-grow">
-                    <a href="hashtag_analyze.html" class="list_item_block under">
-                        <h2>#簡単レシピ</h2>
-                        <div class="sub_contents">
-                            <div class="title twitter_color">Twitter</div>
-                            <div class="value">
-                                本日 72 件 / 総計 525 件
-                            </div>
-                            <div class="title instagram_color">Instagram</div>
-                            <div class="value">
-                                本日 487 件 / 総計 5,664 件
-                            </div>
+            <article>        
+                <h1>
+                    鈴木 一郎　を編集
+                </h1>
+                <div class="form_area">
+                <form action="#" method="#" id="account_edit_form">
+                    <!-- 
+                    <input type="hidden" name="role" value="dashboard">
+                    <input type="hidden" name="action" value="account_user_edit">
+                    <input type="hidden" name="render_type" value="">
+                    <input type="hidden" name="id" value="1875">
+                     -->
+    
+                    <div class="name_block">
+                        <div class="input_group">
+                            <div class="input_title">氏名（姓）</div>
+                            <input type="text" name="name_1" value="鈴木" placeholder="山田">
                         </div>
-                    </a>
-                    <a href="#" class="delete_block suggest_link" data-name="#簡単レシピ">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-trash" viewBox="0 0 16 16">
-                            <path d="M5.5 5.5A.5.5 0 0 1 6 6v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm2.5 0a.5.5 0 0 1 .5.5v6a.5.5 0 0 1-1 0V6a.5.5 0 0 1 .5-.5zm3 .5a.5.5 0 0 0-1 0v6a.5.5 0 0 0 1 0V6z"/>
-                            <path fill-rule="evenodd" d="M14.5 3a1 1 0 0 1-1 1H13v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V4h-.5a1 1 0 0 1-1-1V2a1 1 0 0 1 1-1H6a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1h3.5a1 1 0 0 1 1 1v1zM4.118 4 4 4.059V13a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V4.059L11.882 4H4.118zM2.5 3V2h11v1h-11z"/>
-                        </svg>
-                        <!-- <div class="suggest_popup right">
-                            このハッシュタグ情報を削除
-                        </div> -->
-                    </a>
-                </div>
+                        <div class="input_group">
+                            <div class="input_title">氏名（名）</div>
+                            <input type="text" name="name_2" value="一郎" placeholder="太郎">
+                        </div>
+                    </div>
+                    <div class="name_block">
+                        <div class="input_group">
+                            <div class="input_title">フリガナ（姓）</div>
+                            <input type="text" name="kana_1" value="スズキ" placeholder="ヤマダ">
+                        </div>
+                        <div class="input_group">
+                            <div class="input_title">フリガナ（名）</div>
+                            <input type="text" name="kana_2" value="イチロー" placeholder="タロウ">
+                        </div>
+                    </div>
+                    <div class="email_block">
+                        <div class="input_title">メールアドレス</div>
+                        <input type="text" name="email" value="admin@kazeniwa.net" class="validate[required,custom[email]]">
+                    </div>
+                    <div class="password_block">
+                        <div class="input_title">ログインパスワード</div>
+                        <input type="password" name="password" value="" class="" placeholder="6文字以上で入力してください">
+                    </div>
+                        <!-- <input type="hidden" name="permit" value=""> -->
+                    </div>
+                    <div class="btn_block">
+                        <button type="submit" name="submit" value="1" class="button_b_green">保存</button>
+                    </div>
+                </form>
             </article>
         </div>
     </main>
