@@ -1,374 +1,516 @@
 <!DOCTYPE html>
-<html lang="ja">
+<!--
+Template Name: NobleUI - HTML Bootstrap 5 Admin Dashboard Template
+Author: NobleUI
+Website: https://www.nobleui.com
+Portfolio: https://themeforest.net/user/nobleui/portfolio
+Contact: nobleui123@gmail.com
+Purchase: https://1.envato.market/nobleui_admin
+License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
+-->
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HASHOUT-account</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Responsive HTML Admin Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="NobleUI">
+	<meta name="keywords" content="nobleui, bootstrap, bootstrap 5, bootstrap5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
-    <!-- css -->
-    <link rel="stylesheet" href="../css/ress.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/hover.css">
+	<title>NobleUI - HTML Bootstrap 5 Admin Dashboard Template</title>
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- End fonts -->
+
+	<!-- core:css -->
+	<link rel="stylesheet" href="../assets/vendors/core/core.css">
+	<!-- endinject -->
+
+	<!-- Plugin css for this page -->
+  <link rel="stylesheet" href="../assets/vendors/flatpickr/flatpickr.min.css">
+	<!-- End plugin css for this page -->
+
+	<!-- inject:css -->
+	<link rel="stylesheet" href="../assets/fonts/feather-font/css/iconfont.css">
+	<link rel="stylesheet" href="../assets/vendors/flag-icon-css/css/flag-icon.min.css">
+	<!-- endinject -->
+
+  <!-- Layout styles -->  
+	<link rel="stylesheet" href="../assets/css/demo1/style.css">
+	<link rel="stylesheet" href="../assets/css/demo1/hashout.css">
+	<link rel="stylesheet" href="../assets/css/demo1/hover.css">
+
+  <!-- End layout styles -->
+
+  <link rel="shortcut icon" href="../assets/images/favicon.png" />
 </head>
-<body id="account_analyze" class="twitter">
-    <header class="dashboard-header">
-        <div class="header_inner">
-            <h1><a href="../dashboard.html">HASHOUT</a></h1>
-            <nav>
-                <ul class="dropdwn">
-                    <li>
-                        <a href="../account_list/account_list.html">アカウント調査<span>></span></a>
-    
-                        <ul class="dropdwn_menu">
-                            <li><a href="../account_create/account_create.html">新規登録</a></li>
-                            <li><a href="../account_list/account_list.html">調査一覧</a></li>
-                            <li><a href="#">複合投稿一覧</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="../hashtag_list/hashtag_list.html">ハッシュタグ調査<span>></span></a>
-                        <ul class="dropdwn_menu">
-                            <li><a href="../hashtag_create/hashtag_create.html">新規登録</a></li>
-                            <li><a href="../hashtag_list/hashtag_list.html">調査一覧</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="../account_edit/account_edit.html">企業情報・請求情報</a>
-                        <p>xxxxxxxxxxxxx</p>
-                    <li>
-                        <a href="../account_user/account_user.html">管理者登録・編集</a>
-                    </li>
-                    <li>
-                        <a href="../plan_edit/plan_edit.html">契約プラン確認</a>
-                    </li>
-                </ul>
-            </nav>
-            <nav class="sub_sidemenu">
-                <ul>
-                    <li><a href="#" target="_blank">お問い合わせ</a></li>
-                    <li><a href="#">ログアウト</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="main_top_titlebtn">
-            <!-- <div class="sns_view_icon instagram_view">
-                <h1 class="switch_sns_btn sns_icon_1"><img src="/common/img/2021_newhp/insta_card_new.svg" alt="instagramアイコン"></h1>
-            </div> -->
-            <div class="sns_view_icon twitter_view">
-                <h1 class="switch_sns_btn sns_icon_2">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="36" height="36" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                    </svg>
-                    波乗りマーケティング研究所【カゼニワ】
-                </h1>
-            </div>
-            <!-- <ul class="right_menu">
-                <li class="sns_view_icon instagram_view">
-                    <a href="#" class="switch_sns_btn sns_icon_1" data-sns="1">twitter調査に切り替える</a>
-                </li>
-            </ul> -->
-        </div>
-        <div class="search_header">
-            <ul class="left_menu">
-                <li id="aggregate_link"><a href="#" class="now">集計</a></li>
-                <li id="post_link"><a href="#" class="">投稿</a></li>
-                <li id="recommend_link"><a href="#" class="">レコメンド</a></li>
-            </ul>
-            <div class="right_menu">
-                <a href="#" class="search_box_btn">検索条件設定</a>
-            </div>
-        </div>
-        <div class="search_container select_c">
-            <div class="search_value_container">
-                <div class="search_value_container_inner">
-                    <div class="search_setting_value">
-                        <div class="search_setting_inner" id="select_account">
-                            <div class="setting_value_title">対象アカウント</div>
-                            <div class="setting_value_contents">検索条件設定で選択された値が表示</div>
-                        </div>
-                        <div class="search_setting_inner" id="select_unit_date">
-                            <div class="setting_value_title">対象期間</div>
-                            <div class="setting_value_contents">検索条件設定で選択された値が表示</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- <div class="search_setting_form">
-                <form action="" method="#" id="analyze_setting_form">
-                    <input type="hidden" name="action" value="">
-                    <input type="hidden" name="role" value="">
-                    <input type="hidden" name="download" value="">
-                    <input type="hidden" name="account_id" value="">
-                    <input type="hidden" name="account_analyze_id" value="">
-                    <input type="hidden" name="page" value="">
-                    <div class="search_title">
-                        期間設定
-                    </div>
-                    <div class="search_value_middle">
-                        <input type="text" name="start_date" value="2022-09-07" id="start_calendar">
-                        <span class="separator">〜</span>
-                        <input type="text" name="end_date" value="2022/09/11" id="end_calendar">
-                    </div>
-                    <div class="clear"></div>
-                    <div class="search_title">
-                        アカウント
-                    </div>
-                    <div class="search_value_long">
-                        <input type="radio" name="type_sns" value="1" id="type_sns_1" class="account_sns_check">
-                        <label for="type_sns_1"><span class="sns_icon_1">波乗りマーケティング研究所【カゼニワ】</span><span class="user_name">(KzMktg)</span></label>       
-                    </div>
-                    <div class="clear"></div>
-                    <div class="search_button">
-                        <a href="#" class="search_execute_btn">表示する</a>
-                        <a href="#" class="search_box_btn">検索条件を閉じる</a>
-                    </div>
-                </form>
-            </div> -->
-        </div>
-        <div class="main_container">
-            <section class="account_detail">
-                <div class="account_profile_block">
-                    <div class="account_image">画像</div>
-                    <div>
-                        <a href="#" target="_blank">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter" viewBox="0 0 16 16">
-                                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
-                            </svg>
-                            <span id="account_name">波乗りマーケティング研究所【カゼニワ】</span>
-                        </a>
-                        <p>企業公式（中の人）に役立つ情報を発信します。SNS運用の成功事例、気になる話題を中心にお届けします #モーニングマーケ‍♀️</p>
-                    </div>
-                </div>
-            </section>
-            <!-- <div id="not_data_container">
-                選択期間内にデータがありません。
-            </div> -->
-            <div id="analyze_detail" class="analyze_detail">
-                <section id="total_result">
-                    <h2>
-                        <span class="end_date_view">検索条件設定で選択された値が表示</span> 時点の総件数
-                    </h2>
-                    <div class="total_result">
-                        <ul>
-                            <li class="article_count">
-                                <div class="result_title">投稿回数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_follow">
-                                <div class="result_title">フォロワー数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">人</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_at_follow">
-                                <div class="result_title">フォロー数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">人</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_like">
-                                <div class="result_title">いいね数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_like_avg">
-                                <div class="result_title">平均いいね数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_comment">
-                                <div class="result_title">コメント数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_comment_avg">
-                                <div class="result_title">平均コメント数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_retweet">
-                                <div class="result_title">リツイート数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_retweet_avg">
-                                <div class="result_title">平均リツイート数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_video">
-                                <div class="result_title">動画再生回数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">回</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_imp">
-                                <div class="result_title">予測IMP数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">人</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_price">
-                                <div class="result_title">広告換算額</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">円</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <!-- <section class="instagram_comment">
-                    ※ 投稿者がいいね数を非表示としている設定している場合、いいね数は集計対象外となります。
-                </section> -->
-                <div class="report_download">
-                    <a href="#" class="suggest_link csv_download_btn button_download hvr-glow">
-                        <span>集計結果CSV</span>ダウンロード
-                        <!-- <span class="suggest_popup right">
-                            現在選択しているアカウントの分析結果をCSV形式のものをダウンロードできます。
-                        </span> -->
-                    </a>
-                    <a href="#" class="suggest_link custom_report_btn button_download hvr-glow">
-                        <span>PDFレポート</span>をダウンロード
-                        <!-- <span class="suggest_popup right">
-                            現在選択しているアカウントの分析結果を自動的にレポートが作成されダウンロードできます。
-                        </span> -->
-                    </a>
-                </div>
-                <section id="unit_result">
-                    <h2>
-                        <span class="start_date_view"></span><span class="separator">検索条件設定で選択された値が表示</span><span class="end_date_view"></span> の増減数
-                    </h2>
-                    <div class="total_result">
-                        <ul>
-                            <li class="article_count">
-                                <div class="result_title">投稿回数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_follow">
-                                <div class="result_title">フォロワー数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">人</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_at_follow">
-                                <div class="result_title">フォロー数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">人</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_like">
-                                <div class="result_title">いいね数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_like_avg">
-                                <div class="result_title">平均いいね数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_comment">
-                                <div class="result_title">コメント数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_comment_avg">
-                                <div class="result_title">平均コメント数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_retweet">
-                                <div class="result_title">リツイート数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_retweet_avg">
-                                <div class="result_title">平均リツイート数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_video">
-                                <div class="result_title">動画再生回数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">回</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_imp">
-                                <div class="result_title">予測IMP数</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">人</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                            <li class="count_price">
-                                <div class="result_title">広告換算額</div>
-                                <div class="result_value"><span class="value">0</span><span class="unit">円</span></div>
-                                <a href="#" class="question suggest_link">?</a>
-                            </li>
-                        </ul>
-                    </div>
-                </section>
-                <!--投稿推移-->
-                <section>
-                    <h2 class="chart_title">
-                        投稿回数
-                        <a href="#">投稿内容を確認する</a>
-                    </h2>
-                    <div>
-                        <div id="article_count_chart" class="chart_inner">グラフ表示</div>
-                    </div>
-                </section>
-                <div class="short_chart_block">
-                    <section>
-                        <h2>フォロワー数</h2>
-                        <div>
-                            <div id="follower_count_chart" class="chart_inner">グラフ表示</div>
-                        </div>
-                    </section>
-                    <!--フォロワー数推移-->
-                    <section>
-                        <h2>フォロー数</h2>
-                        <div>
-                            <div id="follow_count_chart" class="chart_inner">グラフ表示</div>
-                        </div>
-                    </section>
-                    <section>
-                        <h2 class="chart_title">
-                            いいね数
-                            <a href="#">いいね数の多い投稿を確認する</a>
-                        </h2>
-                        <div>
-                            <div id="like_count_chart" class="chart_inner">グラフ表示</div>
-                        </div>
-                    </section>
-                    <section>
-                        <h2 class="chart_title">
-                            コメント数
-                            <a href="#">コメント数の多い投稿を確認する</a>
-                        </h2>
-                        <div>
-                            <div id="comment_count_chart" class="chart_inner">グラフ表示</div>
-                        </div>
-                    </section>
-                    <section>
-                        <h2 class="chart_title">
-                            予測インプレッション（閲覧）数
-                            <a href="#">予測インプレッション数の多い投稿を確認する</a>
-                        </h2>
-                        <div>
-                            <div id="imp_count_chart" class="chart_inner">グラフ表示</div>
-                        </div>
-                    </section>
+<body class="twitter">
+	<div class="main-wrapper">
 
-                    <section>
-                        <h2 class="chart_title">
-                            広告換算額
-                            <a href="#">広告換算額の高い投稿を確認する</a>
-                        </h2>
-                        <div>
-                            <div id="price_count_chart" class="chart_inner">グラフ表示</div>
-                        </div>
-                    </section>
+		<!-- partial:partials/_sidebar.html -->
+		<nav class="sidebar">
+            <div class="sidebar-header">
+                <a href="../dashboard.html" class="sidebar-brand">
+                HASHOUT
+                </a>
+                <div class="sidebar-toggler not-active">
+                <span></span>
+                <span></span>
+                <span></span>
                 </div>
-    
             </div>
+            <div class="sidebar-body">
+                <ul class="nav">
+                <li class="nav-item nav-category">Main</li>
+                <li class="nav-item">
+                    <a href="../dashboard.html" class="nav-link">
+                    <i class="link-icon" data-feather="box"></i>
+                    <span class="link-title">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../account_list/account_list.html">
+                    <span class="link-title">アカウント調査</span>
+                    <i class="link-arrow" data-feather="chevron-right"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                    <span class="link-title">新規登録</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../account_list/account_list.html" class="nav-link">
+                    <span class="link-title">調査一覧</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                    <span class="link-title">複合投稿一覧</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../hashtag_list/hashtag_list.html">
+                    <span class="link-title">ハッシュタグ調査</span>
+                    <i class="link-arrow" data-feather="chevron-right"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../hashtag_create/hashtag_create.html">
+                    <span class="link-title">新規登録</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../hashtag_list/hashtag_list.html" class="nav-link">
+                    <span class="link-title">調査一覧</span>
+                    </a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a href="../account_edit/account_edit.html" class="nav-link komoji">
+                    <span class="link-title">企業情報・請求情報</span>
+                    <!-- <p>xxxxxxxxxxxxx</p> -->
+                    </a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a href="../account_user/account_user.html" class="nav-link">
+                    <span class="link-title">管理者登録・編集</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../plan_edit/plan_edit.html" class="nav-link">
+                    <span class="link-title">契約プラン確認</span>
+                    </a>
+                </li>
+                </ul>
+            </div>
+        </nav>
+        <nav class="settings-sidebar">
+            <div class="sidebar-body">
+                <a href="#" class="settings-sidebar-toggler">
+                <i data-feather="settings"></i>
+                </a>
+                <h6 class="text-muted mb-2">Sidebar:</h6>
+                <div class="mb-3 pb-3 border-bottom">
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="sidebarThemeSettings" id="sidebarLight" value="sidebar-light" checked>
+                    <label class="form-check-label" for="sidebarLight">
+                    Light
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="sidebarThemeSettings" id="sidebarDark" value="sidebar-dark">
+                    <label class="form-check-label" for="sidebarDark">
+                    Dark
+                    </label>
+                </div>
+                </div>
+                <div class="theme-wrapper">
+                <h6 class="text-muted mb-2">Light Theme:</h6>
+                <a class="theme-item active" href="../demo1/dashboard.html">
+                    <img src="../assets/images/screenshots/light.jpg" alt="light theme">
+                </a>
+                <h6 class="text-muted mb-2">Dark Theme:</h6>
+                <a class="theme-item" href="../demo2/dashboard.html">
+                    <img src="../assets/images/screenshots/dark.jpg" alt="light theme">
+                </a>
+                </div>
+            </div>
+        </nav>
+        <!-- partial -->
+
+        <div class="page-wrapper">
+                    
+            <!-- partial:partials/_navbar.html -->
+
+            <!-- partial -->
+            <div class="page-content">
+                <div class="row">
+                    <div class="col-12 col-xl-12 stretch-card">
+                        <div class="row flex-grow-1">
+                            <div class="main_top_titlebtn">
+                                <!-- <div class="sns_view_icon instagram_view">
+                                    <h1 class="switch_sns_btn sns_icon_1"><img src="/common/img/2021_newhp/insta_card_new.svg" alt="instagramアイコン"></h1>
+                                </div> -->
+                                <div class="sns_view_icon twitter_view">
+                                    <h1 class="switch_sns_btn sns_icon_2">
+                                        <i data-feather="twitter" class="twitter-color mid-icons"></i>
+                                        波乗りマーケティング研究所【カゼニワ】
+                                    </h1>
+                                </div>
+                                <!-- <ul class="right_menu">
+                                    <li class="sns_view_icon instagram_view">
+                                        <a href="#" class="switch_sns_btn sns_icon_1" data-sns="1">twitter調査に切り替える</a>
+                                    </li>
+                                </ul> -->
+                            </div>
+                            <div class="search_header">
+                                <ul class="left_menu">
+                                    <li id="aggregate_link"><a href="#" class="now">集計</a></li>
+                                    <li id="post_link"><a href="#" class="">投稿</a></li>
+                                    <li id="recommend_link"><a href="#" class="">レコメンド</a></li>
+                                </ul>
+                                <div class="right_menu">
+                                    <a href="#" class="search_box_btn">検索条件設定</a>
+                                </div>
+                            </div>
+                            <div class="search_container select_c">
+                                <div class="search_value_container">
+                                    <div class="search_value_container_inner">
+                                        <div class="search_setting_value">
+                                            <div class="search_setting_inner" id="select_account">
+                                                <div class="setting_value_title">対象アカウント</div>
+                                                <div class="setting_value_contents">検索条件設定で選択された値が表示</div>
+                                            </div>
+                                            <div class="search_setting_inner" id="select_unit_date">
+                                                <div class="setting_value_title">対象期間</div>
+                                                <div class="setting_value_contents">検索条件設定で選択された値が表示</div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- <div class="search_setting_form">
+                                    <form action="" method="#" id="analyze_setting_form">
+                                        <input type="hidden" name="action" value="">
+                                        <input type="hidden" name="role" value="">
+                                        <input type="hidden" name="download" value="">
+                                        <input type="hidden" name="account_id" value="">
+                                        <input type="hidden" name="account_analyze_id" value="">
+                                        <input type="hidden" name="page" value="">
+                                        <div class="search_title">
+                                            期間設定
+                                        </div>
+                                        <div class="search_value_middle">
+                                            <input type="text" name="start_date" value="2022-09-07" id="start_calendar">
+                                            <span class="separator">〜</span>
+                                            <input type="text" name="end_date" value="2022/09/11" id="end_calendar">
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="search_title">
+                                            アカウント
+                                        </div>
+                                        <div class="search_value_long">
+                                            <input type="radio" name="type_sns" value="1" id="type_sns_1" class="account_sns_check">
+                                            <label for="type_sns_1"><span class="sns_icon_1">波乗りマーケティング研究所【カゼニワ】</span><span class="user_name">(KzMktg)</span></label>       
+                                        </div>
+                                        <div class="clear"></div>
+                                        <div class="search_button">
+                                            <a href="#" class="search_execute_btn">表示する</a>
+                                            <a href="#" class="search_box_btn">検索条件を閉じる</a>
+                                        </div>
+                                    </form>
+                                </div> -->
+                            </div>
+                            <div class="main_container">
+                                <section class="account_detail">
+                                    <div class="account_profile_block">
+                                        <div class="account_image">画像</div>
+                                        <div>
+                                            <a href="#" target="_blank">
+                                                <i data-feather="twitter" class="twitter-color small-icons"></i>
+                                                <span id="account_name">波乗りマーケティング研究所【カゼニワ】</span>
+                                            </a>
+                                            <p>企業公式（中の人）に役立つ情報を発信します。SNS運用の成功事例、気になる話題を中心にお届けします #モーニングマーケ‍♀️</p>
+                                        </div>
+                                    </div>
+                                </section>
+                                <!-- <div id="not_data_container">
+                                    選択期間内にデータがありません。
+                                </div> -->
+                                <div id="analyze_detail" class="analyze_detail">
+                                    <section id="total_result">
+                                        <h2>
+                                            <span class="end_date_view">検索条件設定で選択された値が表示</span> 時点の総件数
+                                        </h2>
+                                        <div class="total_result">
+                                            <ul>
+                                                <li class="article_count">
+                                                    <div class="result_title">投稿回数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_follow">
+                                                    <div class="result_title">フォロワー数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">人</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_at_follow">
+                                                    <div class="result_title">フォロー数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">人</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_like">
+                                                    <div class="result_title">いいね数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_like_avg">
+                                                    <div class="result_title">平均いいね数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_comment">
+                                                    <div class="result_title">コメント数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_comment_avg">
+                                                    <div class="result_title">平均コメント数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_retweet">
+                                                    <div class="result_title">リツイート数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_retweet_avg">
+                                                    <div class="result_title">平均リツイート数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_video">
+                                                    <div class="result_title">動画再生回数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">回</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_imp">
+                                                    <div class="result_title">予測IMP数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">人</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_price">
+                                                    <div class="result_title">広告換算額</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">円</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </section>
+                                    <!-- <section class="instagram_comment">
+                                        ※ 投稿者がいいね数を非表示としている設定している場合、いいね数は集計対象外となります。
+                                    </section> -->
+                                    <div class="report_download">
+                                        <a href="#" class="suggest_link csv_download_btn button_download hvr-glow">
+                                            <span>集計結果CSV</span>ダウンロード
+                                            <!-- <span class="suggest_popup right">
+                                                現在選択しているアカウントの分析結果をCSV形式のものをダウンロードできます。
+                                            </span> -->
+                                        </a>
+                                        <a href="#" class="suggest_link custom_report_btn button_download hvr-glow">
+                                            <span>PDFレポート</span>をダウンロード
+                                            <!-- <span class="suggest_popup right">
+                                                現在選択しているアカウントの分析結果を自動的にレポートが作成されダウンロードできます。
+                                            </span> -->
+                                        </a>
+                                    </div>
+                                    <section id="unit_result">
+                                        <h2>
+                                            <span class="start_date_view"></span><span class="separator">検索条件設定で選択された値が表示</span><span class="end_date_view"></span> の増減数
+                                        </h2>
+                                        <div class="total_result">
+                                            <ul>
+                                                <li class="article_count">
+                                                    <div class="result_title">投稿回数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_follow">
+                                                    <div class="result_title">フォロワー数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">人</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_at_follow">
+                                                    <div class="result_title">フォロー数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">人</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_like">
+                                                    <div class="result_title">いいね数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_like_avg">
+                                                    <div class="result_title">平均いいね数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_comment">
+                                                    <div class="result_title">コメント数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_comment_avg">
+                                                    <div class="result_title">平均コメント数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_retweet">
+                                                    <div class="result_title">リツイート数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_retweet_avg">
+                                                    <div class="result_title">平均リツイート数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">件</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_video">
+                                                    <div class="result_title">動画再生回数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">回</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_imp">
+                                                    <div class="result_title">予測IMP数</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">人</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                                <li class="count_price">
+                                                    <div class="result_title">広告換算額</div>
+                                                    <div class="result_value"><span class="value">0</span><span class="unit">円</span></div>
+                                                    <a href="#" class="question suggest_link">?</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </section>
+                                    <!--投稿推移-->
+                                    <section>
+                                        <h2 class="chart_title">
+                                            投稿回数
+                                            <a href="#">投稿内容を確認する</a>
+                                        </h2>
+                                        <div>
+                                            <canvas id="chartjsLine1" class="chart_inner"></canvas>
+                                        </div>
+                                    </section>
+                                    <div class="short_chart_block">
+                                        <section>
+                                            <h2>フォロワー数</h2>
+                                            <div>
+                                                <canvas id="chartjsLine2" class="chart_inner"></canvas>
+                                            </div>
+                                        </section>
+                                        <section>
+                                            <h2>フォロー数</h2>
+                                            <div>
+                                                <canvas id="chartjsLine3" class="chart_inner"></canvas>
+                                            </div>
+                                        </section>
+                                        <section>
+                                            <h2 class="chart_title">
+                                                いいね数
+                                                <a href="#">いいね数の多い投稿を確認する</a>
+                                            </h2>
+                                            <div>
+                                                <canvas id="chartjsLine4" class="chart_inner"></canvas>
+                                            </div>
+                                        </section>
+                                        <section>
+                                            <h2 class="chart_title">
+                                                コメント数
+                                                <a href="#">コメント数の多い投稿を確認する</a>
+                                            </h2>
+                                            <div>
+                                                <canvas id="chartjsLine5" class="chart_inner"></canvas>
+                                            </div>
+                                        </section>
+                                        <section>
+                                            <h2 class="chart_title">
+                                                予測インプレッション（閲覧）数
+                                                <a href="#">予測インプレッション数の多い投稿を確認する</a>
+                                            </h2>
+                                            <div>
+                                                <canvas id="chartjsLine6" class="chart_inner"></canvas>
+                                            </div>
+                                        </section>
+                    
+                                        <section>
+                                            <h2 class="chart_title">
+                                                広告換算額
+                                                <a href="#">広告換算額の高い投稿を確認する</a>
+                                            </h2>
+                                            <div>
+                                                <canvas id="chartjsLine7" class="chart_inner"></canvas>
+                                            </div>
+                                        </section>
+                                    </div>
+                        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- partial:partials/_footer.html -->
+            <footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-between px-4 py-3 border-top small">
+                <p class="text-muted mb-1 mb-md-0">Copyright © 2022 <a href="https://www.nobleui.com" target="_blank">NobleUI</a>.</p>
+                <p class="text-muted">Handcrafted With <i class="mb-1 text-primary ms-1 icon-sm" data-feather="heart"></i></p>
+            </footer>
+            <!-- partial -->
         </div>
-    
-    </main>
+    </div>
+
+	<!-- core:js -->
+	<script src="../assets/vendors/core/core.js"></script>
+	<!-- endinject -->
+
+	<!-- Plugin js for this page -->
+  <script src="../assets/vendors/chartjs/Chart.min.js"></script>
+	<!-- End plugin js for this page -->
+
+	<!-- inject:js -->
+	<script src="../assets/vendors/feather-icons/feather.min.js"></script>
+	<script src="../assets/js/template.js"></script>
+	<!-- endinject -->
+
+	<!-- Custom js for this page -->
+  <script src="../assets/js/chartjs-light.js"></script>
+  <script src="../assets/js/chartjs-dark.js"></script>
+	<!-- End custom js for this page -->
+
 </body>
-</html>
+</html>   

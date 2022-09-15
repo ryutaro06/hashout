@@ -1,128 +1,282 @@
 <!DOCTYPE html>
-<html lang="ja">
+<!--
+Template Name: NobleUI - HTML Bootstrap 5 Admin Dashboard Template
+Author: NobleUI
+Website: https://www.nobleui.com
+Portfolio: https://themeforest.net/user/nobleui/portfolio
+Contact: nobleui123@gmail.com
+Purchase: https://1.envato.market/nobleui_admin
+License: For each use you must have a valid license purchased only from above link in order to legally use the theme for your project.
+-->
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HASHOUT-account</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Responsive HTML Admin Dashboard Template based on Bootstrap 5">
+	<meta name="author" content="NobleUI">
+	<meta name="keywords" content="nobleui, bootstrap, bootstrap 5, bootstrap5, admin, dashboard, template, responsive, css, sass, html, theme, front-end, ui kit, web">
 
-    <!-- css -->
-    <link rel="stylesheet" href="../css/ress.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/style.css">
-    <link rel="stylesheet" href="../css/hover.css">
+	<title>NobleUI - HTML Bootstrap 5 Admin Dashboard Template</title>
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- End fonts -->
+
+	<!-- core:css -->
+	<link rel="stylesheet" href="../assets/vendors/core/core.css">
+	<!-- endinject -->
+
+	<!-- Plugin css for this page -->
+  <link rel="stylesheet" href="../assets/vendors/flatpickr/flatpickr.min.css">
+	<!-- End plugin css for this page -->
+
+	<!-- inject:css -->
+	<link rel="stylesheet" href="../assets/fonts/feather-font/css/iconfont.css">
+	<link rel="stylesheet" href="../assets/vendors/flag-icon-css/css/flag-icon.min.css">
+	<!-- endinject -->
+
+  <!-- Layout styles -->  
+	<link rel="stylesheet" href="../assets/css/demo1/style.css">
+	<link rel="stylesheet" href="../assets/css/demo1/hashout.css">
+	<link rel="stylesheet" href="../assets/css/demo1/hover.css">
+
+  <!-- End layout styles -->
+
+  <link rel="shortcut icon" href="../assets/images/favicon.png" />
 </head>
-<body id="account_user">
-    <header class="dashboard-header">
-        <div class="header_inner">
-            <h1><a href="../dashboard.html">HASHOUT</a></h1>
-            <nav>
-                <ul class="dropdwn">
-                    <li>
-                        <a href="../account_list/account_list.html">アカウント調査<span>></span></a>
-    
-                        <ul class="dropdwn_menu">
-                            <li><a href="../account_create/account_create.html">新規登録</a></li>
-                            <li><a href="../account_list/account_list.html">調査一覧</a></li>
-                            <li><a href="#">複合投稿一覧</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="../hashtag_list/hashtag_list.html">ハッシュタグ調査<span>></span></a>
-                        <ul class="dropdwn_menu">
-                            <li><a href="../hashtag_create/hashtag_create.html">新規登録</a></li>
-                            <li><a href="../hashtag_list/hashtag_list.html">調査一覧</a></li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href="../account_edit/account_edit.html">企業情報・請求情報</a>
-                        <p>xxxxxxxxxxxxx</p>
-                    <li>
-                        <a href="../account_user/account_user.html">管理者登録・編集</a>
-                    </li>
-                    <li>
-                        <a href="../plan_edit/plan_edit.html">契約プラン確認</a>
-                    </li>
+<body>
+	<div class="main-wrapper">
+
+		<!-- partial:partials/_sidebar.html -->
+		<nav class="sidebar">
+            <div class="sidebar-header">
+                <a href="../dashboard.html" class="sidebar-brand">
+                HASHOUT
+                </a>
+                <div class="sidebar-toggler not-active">
+                <span></span>
+                <span></span>
+                <span></span>
+                </div>
+            </div>
+            <div class="sidebar-body">
+                <ul class="nav">
+                <li class="nav-item nav-category">Main</li>
+                <li class="nav-item">
+                    <a href="../dashboard.html" class="nav-link">
+                    <i class="link-icon" data-feather="box"></i>
+                    <span class="link-title">Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../account_list/account_list.html">
+                    <span class="link-title">アカウント調査</span>
+                    <i class="link-arrow" data-feather="chevron-right"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                    <span class="link-title">新規登録</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../account_list/account_list.html" class="nav-link">
+                    <span class="link-title">調査一覧</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link">
+                    <span class="link-title">複合投稿一覧</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../hashtag_list/hashtag_list.html">
+                    <span class="link-title">ハッシュタグ調査</span>
+                    <i class="link-arrow" data-feather="chevron-right"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../hashtag_create/hashtag_create.html">
+                    <span class="link-title">新規登録</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../hashtag_list/hashtag_list.html" class="nav-link">
+                    <span class="link-title">調査一覧</span>
+                    </a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a href="../account_edit/account_edit.html" class="nav-link komoji">
+                    <span class="link-title">企業情報・請求情報</span>
+                    <!-- <p>xxxxxxxxxxxxx</p> -->
+                    </a>
+                </li>
+                </li>
+                <li class="nav-item">
+                    <a href="../account_user/account_user.html" class="nav-link">
+                    <span class="link-title">管理者登録・編集</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="../plan_edit/plan_edit.html" class="nav-link">
+                    <span class="link-title">契約プラン確認</span>
+                    </a>
+                </li>
                 </ul>
-            </nav>
-            <nav class="sub_sidemenu">
-                <ul>
-                    <li><a href="#" target="_blank">お問い合わせ</a></li>
-                    <li><a href="#">ログアウト</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <div class="main_container">
-            <h1>管理ユーザー一覧</h1>
-            <article>
-                <!-- <div class="success_result">
-                    送信が完了しました。
-                </div> -->
-                <div class="account_user_form_box">
-                    <form action="#" method="#" id="invite_form">
-                        <!-- 
-                        <input type="hidden" name="action" value="invite_user">
-                        <input type="hidden" name="role" value="api">
-                         -->
-                        <h4>管理者ユーザーを招待</h4>
-                        <div class="invite_user_box">
-                            <input type="text" name="email" value="" placeholder="メールアドレスを入力してください">
-                            <select name="permit">
-                                <option value="1">管理者として招待</option>
-                                <option value="0">閲覧者として招待</option>
-                            </select>
-                            <button type="submit" name="submit" value="1" class="dash_btn">送信</button>
-                        </div>
-                        <div class="email_check checkbox_origin">
-                            <input type="checkbox" name="cc_mail" value="1" id="cc_mail">
-                            <label for="cc_mail">自分宛のメールアドレスへコピーを送信</label>
-                        </div>
-                    </form>
-                    <div class="user_information">
-                        <div class="user_information_left"></div>
-                        <div class="user_information_right">
-                            <h5>管理者とは？</h5>
-                            <div class="user_info_comment">
-                                ハッシュタグの登録・削除、アカウントの登録・削除、ユーザーの登録、企業情報の編集、プランの変更が行えます。<br>
-                                閲覧者権限の場合、一覧ページと各種分析ページのみ閲覧する事が出来ます。
-                            </div>
+            </div>
+        </nav>
+        <nav class="settings-sidebar">
+            <div class="sidebar-body">
+                <a href="#" class="settings-sidebar-toggler">
+                <i data-feather="settings"></i>
+                </a>
+                <h6 class="text-muted mb-2">Sidebar:</h6>
+                <div class="mb-3 pb-3 border-bottom">
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="sidebarThemeSettings" id="sidebarLight" value="sidebar-light" checked>
+                    <label class="form-check-label" for="sidebarLight">
+                    Light
+                    </label>
+                </div>
+                <div class="form-check form-check-inline">
+                    <input type="radio" class="form-check-input" name="sidebarThemeSettings" id="sidebarDark" value="sidebar-dark">
+                    <label class="form-check-label" for="sidebarDark">
+                    Dark
+                    </label>
+                </div>
+                </div>
+                <div class="theme-wrapper">
+                <h6 class="text-muted mb-2">Light Theme:</h6>
+                <a class="theme-item active" href="../demo1/dashboard.html">
+                    <img src="../assets/images/screenshots/light.jpg" alt="light theme">
+                </a>
+                <h6 class="text-muted mb-2">Dark Theme:</h6>
+                <a class="theme-item" href="../demo2/dashboard.html">
+                    <img src="../assets/images/screenshots/dark.jpg" alt="light theme">
+                </a>
+                </div>
+            </div>
+        </nav>
+		<!-- partial -->
+	
+		<div class="page-wrapper">
+					
+			<!-- partial:partials/_navbar.html -->
+
+			<!-- partial -->
+
+			<div id="account_user" class="page-content">
+
+ 
+            <div class="row">
+                <div class="col-12 col-xl-12 stretch-card">
+                    <div class="row flex-grow-1">
+                        <div class="main_container">
+                            <h1>管理ユーザー一覧</h1>
+                            <article>
+                                <!-- <div class="success_result">
+                                    送信が完了しました。
+                                </div> -->
+                                <div class="account_user_form_box">
+                                    <form action="#" method="#" id="invite_form">
+                                        <!-- 
+                                        <input type="hidden" name="action" value="invite_user">
+                                        <input type="hidden" name="role" value="api">
+                                         -->
+                                        <h4>管理者ユーザーを招待</h4>
+                                        <div class="invite_user_box">
+                                            <input type="text" name="email" value="" placeholder="メールアドレスを入力してください">
+                                            <select name="permit">
+                                                <option value="1">管理者として招待</option>
+                                                <option value="0">閲覧者として招待</option>
+                                            </select>
+                                            <button type="submit" name="submit" value="1" class="dash_btn">送信</button>
+                                        </div>
+                                        <div class="email_check checkbox_origin">
+                                            <input type="checkbox" name="cc_mail" value="1" id="cc_mail">
+                                            <label for="cc_mail">自分宛のメールアドレスへコピーを送信</label>
+                                        </div>
+                                    </form>
+                                    <div class="user_information">
+                                        <div class="user_information_left"></div>
+                                        <div class="user_information_right">
+                                            <h5>管理者とは？</h5>
+                                            <div class="user_info_comment">
+                                                ハッシュタグの登録・削除、アカウントの登録・削除、ユーザーの登録、企業情報の編集、プランの変更が行えます。<br>
+                                                閲覧者権限の場合、一覧ページと各種分析ページのみ閲覧する事が出来ます。
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <table>
+                                    <tr>
+                                        <th class="column_name">名前</th>
+                                        <th>メールアドレス</th>
+                                        <th class="column_permit">権限</th>
+                                        <th class="column_edit"></th>
+                                    </tr>
+                                    <tr data-id="">
+                                        <td>
+                                            鈴木一郎
+                                            <!-- <div class="delete_check_box">
+                                                <span>鈴木一郎</span>さんを削除します。よろしいですか？
+                                                <div class="delete_box">
+                                                    <a href="#" class="delete_execute">削除</a>
+                                                    <span>・</span>
+                                                    <a href="#" class="delete_cancel">キャンセル</a>
+                                                </div>
+                                            </div> -->
+                                        </td>
+                                        <td>admin@kazeniwa.net</td>
+                                        <td class="permit view_1">
+                                            <span></span>
+                                            管理者
+                                        </td>
+                                        <td class="edit_block">
+                                            <a href="account_user_edit.html" class="dash_btn">編集</a>
+                                        </td>
+                                    </tr>
+                                </table>
+                            </article>
                         </div>
                     </div>
                 </div>
-                <table>
-                    <tr>
-                        <th class="column_name">名前</th>
-                        <th>メールアドレス</th>
-                        <th class="column_permit">権限</th>
-                        <th class="column_edit"></th>
-                    </tr>
-                    <tr data-id="">
-                        <td>
-                            鈴木一郎
-                            <!-- <div class="delete_check_box">
-                                <span>鈴木一郎</span>さんを削除します。よろしいですか？
-                                <div class="delete_box">
-                                    <a href="#" class="delete_execute">削除</a>
-                                    <span>・</span>
-                                    <a href="#" class="delete_cancel">キャンセル</a>
-                                </div>
-                            </div> -->
-                        </td>
-                        <td>admin@kazeniwa.net</td>
-                        <td class="permit view_1">
-                            <span></span>
-                            管理者
-                        </td>
-                        <td class="edit_block">
-                            <a href="/dashboard/account_user_edit?id=1875" class="dash_btn">編集</a>
-                        </td>
-                    </tr>
-                </table>
-            </article>
-        </div>
-    </main>
+            </div>
+
+
+			</div>
+
+			<!-- partial:partials/_footer.html -->
+			<footer class="footer d-flex flex-column flex-md-row align-items-center justify-content-between px-4 py-3 border-top small">
+				<p class="text-muted mb-1 mb-md-0">Copyright © 2022 <a href="https://www.nobleui.com" target="_blank">NobleUI</a>.</p>
+				<p class="text-muted">Handcrafted With <i class="mb-1 text-primary ms-1 icon-sm" data-feather="heart"></i></p>
+			</footer>
+			<!-- partial -->
+		
+		</div>
+	</div>
+
+	<!-- core:js -->
+	<script src="../assets/vendors/core/core.js"></script>
+	<!-- endinject -->
+
+	<!-- Plugin js for this page -->
+  <script src="../assets/vendors/flatpickr/flatpickr.min.js"></script>
+  <script src="../assets/vendors/apexcharts/apexcharts.min.js"></script>
+	<!-- End plugin js for this page -->
+
+	<!-- inject:js -->
+	<script src="../assets/vendors/feather-icons/feather.min.js"></script>
+	<script src="../assets/js/template.js"></script>
+	<!-- endinject -->
+
+	<!-- Custom js for this page -->
+  <script src="../assets/js/dashboard-light.js"></script>
+	<!-- End custom js for this page -->
+
 </body>
-</html>
+</html>  
